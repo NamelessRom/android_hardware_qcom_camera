@@ -19,6 +19,9 @@ LOCAL_SRC_FILES := \
 
 LOCAL_CFLAGS = -Wall -Wextra -Werror
 
+# supress warnings
+LOCAL_CFLAGS += -Wno-unused-private-field
+
 LOCAL_CFLAGS += -DHAS_MULTIMEDIA_HINTS
 
 #Debug logs are enabled
